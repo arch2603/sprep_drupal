@@ -1,0 +1,4 @@
+name: Drupal form
+description: To create a form
+type: module
+core: 8.x

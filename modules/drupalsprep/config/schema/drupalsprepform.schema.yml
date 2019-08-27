@@ -1,0 +1,7 @@
+drupalsprep.company:
+  type: config_object
+  label: 'SRPEP Form'
+  mapping:
+    company_name:
+      type: string
+      label: 'SPREP'

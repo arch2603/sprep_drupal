@@ -1,0 +1,63 @@
+<?php
+
+function expression_of_interest_schema(){
+  $schema['expression_of_interest'] = array(
+    'description' => 'Stores data from expression of interest form'
+    'fields' => array(
+        'eoiid' => array(
+          'type' => 'serial',
+          'size' => 'normal',
+          'not null'=> 'TRUE',
+          'description' => 'Primary Key for EOI'
+        ),
+        'name' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => TRUE,
+          'default' => '',
+          'description' => 'name of the person expressing interest'
+        ),
+        'country_residence' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => TRUE,
+          'default' => '',
+          'description' => 'place where live permanently'
+        ),
+        'qualifications' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+          'default' => '',
+          'description' => 'qualifications'
+        ),
+        'desc_experience' => array(
+          'type' => 'text',
+          'size' => 'normal',
+          'not null' => FALSE,
+          'default' => '',
+          'description' => 'place where live permanently'
+        ),
+        'date' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+          'default' => '',
+          'description' => 'Preferred start date'
+        ),
+        'desc_experience' => array(
+          'type' => 'text',
+          'size' => 'normal',
+          'not null' => FALSE,
+          'default' => '',
+          'description' => 'place where live permanently'
+        ),
+      ),//fields
+  );//schema
+
+  return $schema;
+
+}
+
+
+ ?>

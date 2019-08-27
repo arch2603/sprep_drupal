@@ -1,0 +1,23 @@
+drupalsprep.form:
+  path: /sprepform-example-form
+  defaults:
+    _title: 'SPREP Form'
+    _form: '\Drupal\drupalsprep\Form\SPREPForm'
+  requirements:
+    _access: 'TRUE'
+
+drupalsprep.eoi:
+  path: /eoi-submit-data
+  defaults:
+    _title: 'Expression of Interest'
+    _controller: '\Drupal\drupalsprep\Controller\EOIController::getData'
+  requirements:
+    _permission: 'access content'
+
+drupalsprep.successpage:
+  path: '/sucesspage'
+  defaults:
+    _title: 'Form successfully submitted'
+    _controller: '\Drupal\drupalsprep\Controller\EOIController::successpage'
+  requirements:
+    _permission: 'access content'
